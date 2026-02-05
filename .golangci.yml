@@ -4,24 +4,28 @@ run:
 linters:
   disable-all: true
   enable:
-    - deadcode
+    - bodyclose
+    - depguard
+    - dupl
     - errcheck
-    - unused
-    - gosimple
-    - structcheck
-    - varcheck
-    - typecheck
-    - govet
-    - staticcheck
-    - ineffassign
-    - deadcode
-    - stylecheck
-    - interfacer
-    - unconvert
     - goconst
-    - misspell
-    - maligned
+    - gocritic
     - gocyclo
     - gofmt
+    - goimports
+    - goprintffuncname
     - gosec
-    - golint
+    - gosimple
+    - govet
+    - ineffassign
+    - misspell
+    - nakedret
+    - prealloc
+    - revive         # Replaces golint
+    - staticcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused         # Covers deadcode, structcheck, varcheck
+    - whitespace

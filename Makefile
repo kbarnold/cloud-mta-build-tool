@@ -10,7 +10,7 @@ all:format clean dir gen build-linux build-linux-arm build-darwin build-darwin-a
 
 GOCMD=go
 GOBUILD=$(GOCMD) build
-GOLANGCI_VERSION = 1.21.0
+GOLANGCI_VERSION = 1.55.2
 
 # Binary names
 BINARY_NAME=mbt
@@ -64,6 +64,8 @@ tools:
 	@echo "done"
 
 lint:
+	@echo "Verifying golangci-lint version..."
+	golangci-lint --version
 	@echo "Start project linting"
 	golangci-lint run --config .golangci.yml
 	@echo "done linting"
