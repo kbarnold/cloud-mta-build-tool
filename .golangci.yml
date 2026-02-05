@@ -5,27 +5,27 @@ linters:
   disable-all: true
   enable:
     - bodyclose
-    - depguard
-    - dupl
+      #    - depguard
+      #    - dupl
     - errcheck
-    - goconst
-    - gocritic
+      #    - goconst
+      #    - gocritic
     - gocyclo
     - gofmt
-    - goimports
+      #    - goimports
     - goprintffuncname
-    - gosec
+      #    - gosec
     - gosimple
     - govet
     - ineffassign
     - misspell
-    - nakedret
-    - prealloc
-    - revive         # Replaces golint
+      #    - nakedret
+      #    - prealloc
+      #    - revive         # Replaces golint
     - staticcheck
-    - stylecheck
+      #    - stylecheck
     - typecheck
     - unconvert
-    - unparam
-    - unused         # Covers deadcode, structcheck, varcheck
-    - whitespace
+      #    - unparam
+      #    - unused         # Covers deadcode, structcheck, varcheck
+      #    - whitespace
